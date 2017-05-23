@@ -1,0 +1,10 @@
+<form id="search-form">
+  {?query.term}
+  <input id="term-input" type="text" value="{query.term}" />
+  {:else}
+  <input id="term-input" type="text" />
+  {/query.term}
+
+  <label for="term-input">Term</label>
+  <input class="btn" type="submit" value="Submit">
+</form>

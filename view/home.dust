@@ -1,0 +1,9 @@
+{>"_layout"/}
+
+{<bodyContent}
+  <div style="grid-column: 1/4;">
+    <h1 class="dark-bg">PubMed Search</h1>
+    <h5 class="dark-bg">Search for terms on PubMed</h5>
+  </div>
+  <div style="grid-column: 2/3;">{>partials__term-form query=query /}</div>
+{/bodyContent}

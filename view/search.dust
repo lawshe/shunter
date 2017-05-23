@@ -1,0 +1,47 @@
+{>"_layout"/}
+
+{<bodyContent}
+  <div style="grid-column: 1/4;">
+    {>partials__term-form query=query /}
+  </div>
+
+  {?error}
+  <div style="grid-column: 1/4;">
+    <h1 class="dark-bg">Error</h1>
+    <h2 class="dark-bg">Unable to process request</h2>
+  </div>
+  {/error}
+
+  {?results.articles}
+  <div id="results-header">
+    <h2 class="dark-bg">{@currentLoc page=page total=results.total /} of {results.total|prettyNumber} {@gt key=results.total value=1}Results{:else}Result{/gt}</h2><a class="btn btn-clear" href="/search">Clear</a>
+  </div>
+
+  {#results.articles}
+  <div class="card">{>partials__article/}</div>
+  {/results.articles}
+
+  {?pagination.prev}
+  <div style="grid-column: 1/2;">
+    <div class="pagination-prev"><a id="prev-btn" class="btn" href="/search?term={query.term}&page={pagination.prev}">&#8612; Previous</a></div>
+  </div>
+  {/pagination.prev}
+
+  {?pagination.next}
+  <div style="grid-column: 3/4;">
+    <div class="pagination-next"><a id="next-btn" class="btn" href="/search?term={query.term}&page={pagination.next}">Next &#8614;</a></div>
+  </div>
+  {/pagination.next}
+
+  {:else}
+
+  {?query.term}
+  <div id="results-header">
+    <h2 class="dark-bg">No Results</h2><a class="btn btn-clear" href="/search">Clear</a>
+  </div>
+  {/query.term}
+
+  {/results.articles}
+
+
+{/bodyContent}

@@ -1,0 +1,33 @@
+{?journal.title}
+<h5><i>{journal.title}</i></h5>
+{/journal.title}
+
+{?ePubDate}
+<h4>{@dateFormat date="{ePubDate}" format="d mmmm yyyy"/}</h4>
+{:else}
+{?issuePubDate}
+<h4>{@dateFormat date="{issuePubDate}" format="mmmm yyyy"/}</h4>
+{/issuePubDate}
+{/ePubDate}
+
+<h6>
+{@eq key=pubStatus value="aheadofprint"}Ahead of Print{/eq}
+{?volume}Volume {volume}{/volume}
+{?volume}{?issue},{/issue}{/volume}
+{?issue} Issue {issue}{/issue}
+</h6>
+
+<h3>{articleTitle}</h3>
+
+<ul class="article-links">
+  {?ids.pmid}<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/{pmid}" target="_BLANK">PubMed</a></li>{/ids.pmid}
+  {?ids.doi}<li><a href="http://dx.doi.org/{ids.doi}" target="_BLANK">DOI</a></li>{/ids.doi}
+</ul>
+
+{?keywords}
+<ul class="keywords">
+  {#keywords}
+  <li><a href="/search?term={.}">{.}</a></li>
+  {/keywords}
+</ul>
+{/keywords}

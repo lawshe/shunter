@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{title}</title>
+  <link rel="stylesheet" href="{@assetPath src="main.css"/}"/>
+  <link rel="shortcut icon" href="{@assetPath src="favicon.ico"/}"/>
+</head>
+<body>
+  {>partials-layout__menu/}
+  <div id="main" class="wrapper">
+    {+bodyContent/}
+    <div class="push" style="grid-column: 1/4;"></div>
+  </div>
+  {>partials-layout__footer/}
+  <script src="{@assetPath src="main.js"/}"></script>
+</body>
+</html>

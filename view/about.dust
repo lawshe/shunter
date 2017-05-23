@@ -1,0 +1,8 @@
+{>"_layout"/}
+
+{<bodyContent}
+  <h1 class="dark-bg" style="grid-column: 1/4;">About</h1>
+  <div class="dark-bg" style="grid-column: 1/4;">
+    <p>This site was used to learn <a href="https://github.com/springernature/shunter" target="_BLANK">Shunter</a>. It uses a public API, <a href="https://eutils.ncbi.nlm.nih.gov/" target="_BLANK">https://eutils.ncbi.nlm.nih.gov/</a>, published by the National Center for Biotechnology Information (NCBI) to search publications at PubMed.</p>
+  </div>
+{/bodyContent}
