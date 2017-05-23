@@ -1,0 +1,8 @@
+{>"_layout"/}
+
+{<bodyContent}
+  <div style="grid-column: 1/4;">
+    <h1 class="dark-bg">404</h1>
+    <h3 class="dark-bg">Page Not Found</h3>
+  </div>
+{/bodyContent}

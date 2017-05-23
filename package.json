@@ -1,0 +1,33 @@
+{
+  "name": "getting-started-with-shunter",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js -p 3000",
+    "test": "xo"
+  },
+  "dependencies": {
+    "dustmite": "^2.0.4",
+    "express": "^4.15.3",
+    "mocha": "^3.4.1",
+    "mocha-phantomjs-core": "^2.1.1",
+    "node-sass": "^4.5.3",
+    "request": "^2.81.0",
+    "shunter": "*",
+    "xml2json": "^0.11.0",
+    "xo": "^0.18.2"
+  },
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "mocha": "^3.4.1",
+    "sinon": "^2.3.0"
+  },
+  "xo": {
+    "globals": [
+      "after",
+      "before",
+      "describe",
+      "it"
+    ]
+  }
+}
