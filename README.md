@@ -53,11 +53,7 @@ $ cd shunter
 $ npm install
 ```
 ### Running
-Start the server
-```
-$ node server/index.js
-```
-In a new window, start Shunter
+Start the app,
 ```
 $ npm start
 ```
