@@ -19,7 +19,7 @@ Query parameters are set in the URL. Requests to PubMed are sent in `/server/sen
 ### Templating
 Shunter uses [Dust.js](http://www.dustjs.com/). A Dust.js helper is used to display the current location within results, see `/dust/current-loc.js`. A Dust.js filter is used on the total result count to include commas as thousand separator.
 
-Template files are in `/view/`.
+Template files are in `/app/view/`.
 
 ## Linters
 ### Templates
@@ -61,4 +61,5 @@ In a new window, start Shunter
 ```
 $ npm start
 ```
-Open localhost:3000 in your browser.
+
+Open [localhost:3000](http://localhost:3000) in your browser.
