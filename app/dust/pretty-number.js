@@ -1,4 +1,4 @@
-const _utils = require('../utils.js');
+const _utils = require('../../utils.js');
 
 module.exports = dust => {
 	dust.filters.prettyNumber = value => {

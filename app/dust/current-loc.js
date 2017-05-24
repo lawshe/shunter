@@ -1,5 +1,5 @@
-const _config = require('../config');
-const _utils = require('../utils.js');
+const _config = require('../../config');
+const _utils = require('../../utils.js');
 
 module.exports = function (dust) {
 	dust.helpers.currentLoc = (chunk, context, bodies, params) => {
