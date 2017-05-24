@@ -2,7 +2,7 @@ const assert = require('assert');
 const helper = require('shunter').testhelper();
 const testData = require('./test-data.js');
 
-const rootdir = __dirname.substring(0, __dirname.indexOf('/test'));
+const rootdir = __dirname.substring(0, __dirname.indexOf('/test')) + '/app';
 
 // Tests
 describe('Next button', () => {
