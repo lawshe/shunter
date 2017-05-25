@@ -79,6 +79,8 @@ app.get('/search', (req, res) => {
 	}
 });
 
+app.use('/public', express.static('public'))
+
 app.get('*', (req, res) => {
 	res.writeHead(404, {
 		'Content-Type': 'application/x-shunter+json'
