@@ -3,7 +3,7 @@ module.exports = {
 		retmax: 3
 	},
 	server: {
-		port: 5401
+		port: process.env.PORT || 5000
 	},
 	pages: {
 		about: {
