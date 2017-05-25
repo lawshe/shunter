@@ -2,14 +2,14 @@ const shunter = require('shunter');
 const _config = require('../config.js');
 // Create a Shunter application, passing in options
 
-const root = __dirname.replace('/app', '');
+const root = __dirname.replace('/client', '');
 
 const app = shunter({
 	// Configure the themes path to the current directory
 	path: {
-		dust: `${root}/app/dust`,
-		resources: `${root}/app/resources`,
-		shunterRoot: `${root}/app`,
+		dust: `${root}/client/dust`,
+		resources: `${root}/client/resources`,
+		shunterRoot: `${root}/client`,
 		themes: __dirname
 	},
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node server/index.js | node app/index.js",
+    "start": "node server/index.js | node client/index.js",
     "test": "xo"
   },
   "dependencies": {
