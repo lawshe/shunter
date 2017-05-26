@@ -1,9 +1,7 @@
 {
   "assets": {
     "favicon.ico": "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico",
-    "loading.gif": "loading-e8b2f942c209fd3039d7d3afd884f992.gif",
-    "main.js": "main-8420b268c9385e32f6a1573949f84b9e.js",
-    "main.css": "main-ca3bd9893caf32c5ece7c9ea48232843.css"
+    "loading.gif": "loading-e8b2f942c209fd3039d7d3afd884f992.gif"
   },
   "files": {
     "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico": {
