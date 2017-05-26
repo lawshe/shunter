@@ -1,7 +1,9 @@
 {
   "assets": {
     "favicon.ico": "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico",
-    "loading.gif": "loading-e8b2f942c209fd3039d7d3afd884f992.gif"
+    "loading.gif": "loading-e8b2f942c209fd3039d7d3afd884f992.gif",
+    "main.js": "main-d08fa3c78478c9a20c1a0e1b6fc53026.js",
+    "main.css": "main-ca3bd9893caf32c5ece7c9ea48232843.css"
   },
   "files": {
     "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico": {
@@ -27,6 +29,12 @@
       "mtime": "2017-05-26T16:01:59.000Z",
       "size": 2246,
       "digest": "ca3bd9893caf32c5ece7c9ea48232843"
+    },
+    "main-d08fa3c78478c9a20c1a0e1b6fc53026.js": {
+      "logical_path": "main.js",
+      "mtime": "2017-05-26T20:03:30.000Z",
+      "size": 2160,
+      "digest": "d08fa3c78478c9a20c1a0e1b6fc53026"
     }
   }
 }
