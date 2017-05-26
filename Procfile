@@ -1,2 +1,2 @@
-web: node client/index.js --route-override=https://lawshe-shunter-server.herokuapp.com/ --origin-override
+web: node client/index.js
 server: node server/index.js

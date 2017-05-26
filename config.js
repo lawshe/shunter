@@ -3,6 +3,7 @@ module.exports = {
 		retmax: 3
 	},
 	server: {
+		host: 'https://lawshe-shunter-server.herokuapp.com/',
 		port: process.env.PORT || 5000
 	},
 	pages: {
