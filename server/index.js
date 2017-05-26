@@ -7,6 +7,7 @@ const publicAssets = __dirname.replace('/server', '/client/public');
 
 // Root
 app.get('/', (req, res) => {
+	console.log('Home requested');
 	res.writeHead(200, {
 		'Content-Type': 'application/x-shunter+json'
 	});
@@ -14,6 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
+	console.log('About requested');
 	res.writeHead(200, {
 		'Content-Type': 'application/x-shunter+json'
 	});
