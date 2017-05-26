@@ -1,0 +1,34 @@
+{
+  "assets": {
+    "favicon.ico": "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico",
+    "loading.gif": "loading-e8b2f942c209fd3039d7d3afd884f992.gif",
+    "main.js": "main-8420b268c9385e32f6a1573949f84b9e.js",
+    "main.css": "main-ca3bd9893caf32c5ece7c9ea48232843.css"
+  },
+  "files": {
+    "favicon-4bec24c2cd08614d24a5ed02ad393a8f.ico": {
+      "logical_path": "favicon.ico",
+      "mtime": "2017-05-24T23:38:01.000Z",
+      "size": 4286,
+      "digest": "4bec24c2cd08614d24a5ed02ad393a8f"
+    },
+    "loading-e8b2f942c209fd3039d7d3afd884f992.gif": {
+      "logical_path": "loading.gif",
+      "mtime": "2017-05-24T23:38:01.000Z",
+      "size": 32912,
+      "digest": "e8b2f942c209fd3039d7d3afd884f992"
+    },
+    "main-8420b268c9385e32f6a1573949f84b9e.js": {
+      "logical_path": "main.js",
+      "mtime": "2017-05-24T23:38:01.000Z",
+      "size": 2181,
+      "digest": "8420b268c9385e32f6a1573949f84b9e"
+    },
+    "main-ca3bd9893caf32c5ece7c9ea48232843.css": {
+      "logical_path": "main.css",
+      "mtime": "2017-05-26T16:01:59.000Z",
+      "size": 2246,
+      "digest": "ca3bd9893caf32c5ece7c9ea48232843"
+    }
+  }
+}
