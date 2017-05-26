@@ -2,7 +2,7 @@
   "name": "getting-started-with-shunter",
   "version": "1.0.0",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node client/index.js",
     "test": "xo"
   },
   "dependencies": {
