@@ -87,7 +87,6 @@ body {
   position: relative;
   &::after{
     background-color: rgba(0,0,0,0.8);
-    background-image: url(<%= asset_path('loading.gif') %>);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 10vh;
