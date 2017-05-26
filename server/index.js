@@ -80,7 +80,11 @@ app.get('/search', (req, res) => {
 	}
 });
 
-app.use('/public', express.static(publicAssets));
+app.use('/public', (req, res, next) => {
+    console.log('Resource request', req.originalUrl);
+    next();
+}, express.static(publicAssets));
+
 
 app.get('*', (req, res) => {
 	console.log('404', req.url);
@@ -91,3 +95,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(_config.server.port);
+
+console.log('..Server started on port', _config.server.port);
