@@ -60,7 +60,7 @@ function submitTermSearch(e) {
     }
   }
 
-  window.location.href = 'http://localhost:3000/search' + queryString
+  window.location.href = '/search' + queryString
 }
 
 // Click Prev/Next
