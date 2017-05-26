@@ -19,7 +19,7 @@ const app = shunter({
 	routes: {
 		localhost: {
 			default: {
-				host: 'localhost',
+				host: _config.server.host,
 				port: _config.server.port
 			}
 		}
