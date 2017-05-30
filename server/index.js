@@ -4,7 +4,7 @@ const _sendQuery = require('./send-query');
 
 const app = express();
 const publicAssets = __dirname.replace('/server', '/public/resources');
-
+console.log('publicAssets = ', publicAssets);
 // Root
 app.get('/', (req, res) => {
 	console.log('Home requested');
