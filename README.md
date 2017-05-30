@@ -14,7 +14,7 @@ The site will search for publications at [PubMed](https://www.ncbi.nlm.nih.gov/p
 An express server is created in `/server/index.js` to handle routing and serve JSON to Shunter. Pages data and server port are set in `/config.js`.
 
 ### Querying
-Query parameters are set in the URL. Requests to PubMed are sent in `/server/send_query.js` and processed in `/server/process_pubmed.js`;
+Query parameters are set in the URL. Requests to PubMed are sent in `/server/send_query.js` and processed in `/server/process_pubmed.js`.
 
 ### Templating
 Shunter uses [Dust.js](http://www.dustjs.com/). A Dust.js helper is used to display the current location within results, see `/dust/current-loc.js`. A Dust.js filter is used on the total result count to include commas as thousand separator.
