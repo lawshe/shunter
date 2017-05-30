@@ -8,7 +8,7 @@ const app = shunter({
 	// Configure the themes path to the current directory
 	path: {
 		dust: `${root}/client/dust`,
-		publicResources: `${root}/public/resources`,
+		publicResources: `${root}/client/public/resources`,
 		resources: `${root}/client/resources`,
 		shunterRoot: `${root}/client`,
 		themes: __dirname

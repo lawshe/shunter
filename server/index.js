@@ -3,8 +3,10 @@ const _config = require('../config.js');
 const _sendQuery = require('./send-query');
 
 const app = express();
-const publicAssets = __dirname.replace('/server', '/public/resources');
+
+const publicAssets = __dirname.replace('/server', '/client/public/resources');
 console.log('publicAssets = ', publicAssets);
+
 // Root
 app.get('/', (req, res) => {
 	console.log('Home requested');
