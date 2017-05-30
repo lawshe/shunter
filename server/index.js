@@ -5,7 +5,7 @@ const _sendQuery = require('./send-query');
 const app = express();
 console.log('process.cwd() = ', process.cwd());
 console.log('__dirname = ', __dirname);
-const publicAssets =  process.cwd() + '/client/public/resources';
+const publicAssets = __dirname.replace('/server', '/client/public/resources');
 console.log('publicAssets = ', publicAssets);
 
 // Root
