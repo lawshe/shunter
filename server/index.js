@@ -86,8 +86,8 @@ app.get('/search', (req, res) => {
 });
 
 app.use('/public/resources', (req, res, next) => {
-    console.log('Resource request', req.originalUrl);
-    next();
+		console.log('Resource request', req.originalUrl);
+		next();
 }, express.static(publicAssets));
 
 
