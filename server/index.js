@@ -3,7 +3,7 @@ const _config = require('../config.js');
 const _sendQuery = require('./send-query');
 
 const app = express();
-const publicAssets = __dirname.replace('/server', '/public');
+const publicAssets = __dirname.replace('/server', '/public/resources');
 
 // Root
 app.get('/', (req, res) => {
@@ -82,7 +82,7 @@ app.get('/search', (req, res) => {
 	}
 });
 
-app.use('/public', (req, res, next) => {
+app.use('/public/resources', (req, res, next) => {
     console.log('Resource request', req.originalUrl);
     next();
 }, express.static(publicAssets));
