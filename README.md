@@ -53,9 +53,35 @@ $ cd shunter
 $ npm install
 ```
 ### Running
-Start the app,
+#### Local client and local server
+First start the server,
 ```
-$ npm start
+$ node server/index.js
+```
+In a new window, start the client,
+```
+$ node client/index.js -p 3000 --route-override=https://localhost:5000/ --origin-override
 ```
 
 Open [localhost:3000](http://localhost:3000) in your browser.
+
+## Deploying
+These instruction will get get a limited sandbox on Heroku. The backend and frontend apps are running as separate Heroku sandboxes. Processes are described in a [Procfile](https://devcenter.heroku.com/articles/procfile).
+
+### Server
+Create a new Heroku app with `$customServerName`.
+
+```
+$ git remote add server https://git.heroku.com/$customServerName.git
+$ git push server master
+$ heroku ps:scale web=0 server=1 --remote server
+```
+
+### Client
+Create a new Heroku app with `$customClientName`.
+
+```
+$ git remote add client https://git.heroku.com/$customClientName.git
+$ git push client master
+$ heroku ps:scale web=1 server=0 --remote client
+```
